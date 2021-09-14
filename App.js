@@ -10,9 +10,9 @@ export default function App() {
       <Image
          
              source={{
-             width:400,
-             height:150,
-             uri:"https://codeclan.com/wp-content/uploads/2019/01/CodeClan-Careers-01.png",}}/>
+             width:200,
+             height:300,
+             uri:"https://i.picsum.photos/id/515/200/300.jpg?hmac=vFZxSlHgQLs0ROgtBCrqBiYOVaKSOrWGCyHjQclmjh8",}}/>
     </SafeAreaView>
   );
 }
