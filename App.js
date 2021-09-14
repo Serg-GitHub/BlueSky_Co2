@@ -1,17 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello Dearest Sara, how art thou?</Text>
+      <Text style={styles.text}>Hello User!, how are you?</Text>
       <StatusBar style="auto" />
       <Image
          
              source={{
-             width:400,
-             height:500,
+             width:200,
+             height:300,
              uri:"https://picsum.photos/200/300",}}/>
     </SafeAreaView>
   );
@@ -24,4 +24,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 50,
+  }
+
+
 });
