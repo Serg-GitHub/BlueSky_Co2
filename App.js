@@ -5,7 +5,7 @@ import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Hello User!, how are you?</Text>
+      <Text style={styles.text}>Hello Craig!, how are you?</Text>
       <StatusBar style="auto" />
       <Image
          
@@ -29,4 +29,8 @@ const styles = StyleSheet.create({
   }
 
 
-});
+
+});  
+
+
+
