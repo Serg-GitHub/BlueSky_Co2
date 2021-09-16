@@ -17,17 +17,25 @@ export default function App() {
           component={HomeScreen}
           options={{
           headerTintColor: 'white',
-          headerStyle: { backgroundColor: 'green' },
+          headerStyle: { backgroundColor: '#0f270e' },
           }}
         />
         <Stack.Screen
           name="Food"
-          component={Food}        
+          component={Food}
+          options={{
+          headerTintColor: 'white',
+          headerStyle: { backgroundColor: '#0f270e' },
+          }}        
         />
 
         <Stack.Screen
-        name= "Transport"
-        component={Transport}
+          name= "Transport"
+          component={Transport}
+          options={{
+          headerTintColor: 'white',
+          headerStyle: { backgroundColor: '#0f270e' },
+          }}
         />
       </Stack.Navigator>
      </NavigationContainer>

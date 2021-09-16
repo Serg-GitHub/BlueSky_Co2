@@ -8,17 +8,20 @@ function HomeScreen({ navigation }) {
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style= {styles.container}>
 
-        <Text>Hi User!,</Text>
+        <Text style={styles.white}>Hi User!</Text>
         <Image
       source={{ uri: 'https://miro.medium.com/max/1024/1*FBRtL-zgF37T1LChAyCXBA.jpeg' }}
       style={{ width:360, height: 200 }}
       />
         
         <Button
-          title="Add a Food Activity"
-          onPress={() => navigation.navigate('Food')}
+        title="Add a Food Activity"
+        color="#ff8c00"
+        onPress={() => navigation.navigate('Food')}
         />
-        <Button title="Add a transport Activity" onPress={() => navigation.navigate('Transport')} />
+        <Button title="Add a transport Activity" 
+        color="#ffcc00"
+        onPress={() => navigation.navigate('Transport')} />
 
       </View>
     );
@@ -27,13 +30,18 @@ function HomeScreen({ navigation }) {
   const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0080ff',
+    backgroundColor: '#0f270e',
     alignItems: 'center',
     justifyContent: 'center',
+   
+    
   },
-  text: {
-    fontSize: 50,
-  }  
+  white: {
+    fontSize: 40,
+    color: 'white',
+    
+  },
+
 });  
 
 export default HomeScreen;
