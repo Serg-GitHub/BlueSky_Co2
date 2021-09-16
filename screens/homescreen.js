@@ -1,7 +1,5 @@
 import * as React from "react";
 import { View, Button, Text } from "react-native";
-import { createStackNavigator } from "react-navigation-stack";
-import { NavigationContainer } from "react-navigation/native";
 export default Home 
 
 
