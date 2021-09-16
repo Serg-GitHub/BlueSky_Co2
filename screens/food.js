@@ -1,4 +1,5 @@
-
+import * as React from 'react';
+import { View, Button, Text } from 'react-native';
 
 function Food({ navigation }) {
     return (
@@ -9,9 +10,6 @@ function Food({ navigation }) {
     );
   }
 
-  <Stack.Screen
-          name="Food"
-          component={Food}        
-        />
+  
 
 export default Food;

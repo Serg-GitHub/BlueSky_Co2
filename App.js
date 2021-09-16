@@ -2,6 +2,7 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import HomeScreen from './screens/home';
+import Food from './screens/food';
 import { createStackNavigator } from '@react-navigation/stack';
 
 // import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
@@ -19,6 +20,10 @@ export default function App() {
           headerTintColor: 'white',
           headerStyle: { backgroundColor: 'green' },
           }}
+        />
+        <Stack.Screen
+          name="Food"
+          component={Food}        
         />
       </Stack.Navigator>
      </NavigationContainer>

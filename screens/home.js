@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { View, Button, Text } from 'react-native';
-
 // import Food from './food';
-
 
 function HomeScreen({ navigation }) {
     return (
@@ -15,10 +13,4 @@ function HomeScreen({ navigation }) {
       </View>
     );
   }
-
-  
- 
-
-  
-
 export default HomeScreen;
