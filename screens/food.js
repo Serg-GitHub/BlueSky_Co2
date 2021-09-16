@@ -6,6 +6,8 @@ function Food({ navigation }) {
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text>Food screen</Text>
         <Button title="Go back" onPress={() => navigation.goBack()} />
+        <Button title="Go to transport" onPress={() => navigation.navigate('Transport')} />
+
       </View>
     );
   }
