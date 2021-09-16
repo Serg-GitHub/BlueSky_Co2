@@ -5,11 +5,13 @@ import { View, Button, Text } from 'react-native';
 function HomeScreen({ navigation }) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Home screen</Text>
+        <Text>Hi User!,</Text>
         <Button
-          title="Go to Food"
+          title="Add a Food Activity"
           onPress={() => navigation.navigate('Food')}
         />
+        <Button title="Add a transport Activity" onPress={() => navigation.navigate('Transport')} />
+
       </View>
     );
   }

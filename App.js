@@ -10,7 +10,10 @@ import Transport from './screens/transport';
 const Stack = createStackNavigator();
 export default function App() {
   return (
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
     <NavigationContainer>
        <Stack.Navigator>
         <Stack.Screen
@@ -50,6 +53,9 @@ export default function App() {
 //     fontSize: 50,
 //   }  
 // });  
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> develop
