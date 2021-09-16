@@ -8,19 +8,19 @@ function HomeScreen({ navigation }) {
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style= {styles.container}>
 
-        <Text style={styles.white}>Hi User!</Text>
+        <Text style={styles.text}>Hi User!</Text>
         <Image
-      source={{ uri: 'https://miro.medium.com/max/1024/1*FBRtL-zgF37T1LChAyCXBA.jpeg' }}
+      source={{ uri: 'https://media0.giphy.com/media/Z8k6qo0AVIsPdROQNd/giphy.gif?cid=ecf05e47o5wz1yyzqvovp9xkj9abanqx5j4tfntl30tcums3&rid=giphy.gif&ct=g' }}
       style={{ width:360, height: 200 }}
       />
         
         <Button
         title="Add a Food Activity"
-        color="#ff8c00"
+        color="#5cb85c"
         onPress={() => navigation.navigate('Food')}
         />
         <Button title="Add a transport Activity" 
-        color="#ffcc00"
+        color="#27ae60"
         onPress={() => navigation.navigate('Transport')} />
 
       </View>
@@ -30,13 +30,13 @@ function HomeScreen({ navigation }) {
   const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0f270e',
+    backgroundColor: '#001315',
     alignItems: 'center',
     justifyContent: 'center',
    
     
   },
-  white: {
+  text: {
     fontSize: 40,
     color: 'white',
     

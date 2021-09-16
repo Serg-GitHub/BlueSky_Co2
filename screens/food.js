@@ -7,11 +7,11 @@ function Food({ navigation }) {
       <View style= {styles.container}>
         <Text style={styles.white}>Food Activity</Text>
         <Button title="Go back" 
-        color="#ff8c00"
+        color="#5cb85c"
         onPress={() => navigation.goBack()} />
    
         <Button title="Add a transport Activity"
-        color="#ffcc00"
+        color="#27ae60"
         onPress={() => navigation.navigate('Transport')} />
 
       </View>
@@ -22,7 +22,7 @@ function Food({ navigation }) {
     const styles = StyleSheet.create({
       container: {
         flex: 1,
-        backgroundColor: '#0f270e',
+        backgroundColor: '#001315',
         alignItems: 'center',
         justifyContent: 'center',
        

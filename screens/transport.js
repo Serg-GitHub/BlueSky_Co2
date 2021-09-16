@@ -6,11 +6,11 @@ function Transport({ navigation }) {
       <View style= {styles.container}>
         <Text style={styles.white}>Transport Activity</Text>
         <Button title="Go back" 
-        color="#ff8c00"
+        color="#5cb85c"
         onPress={() => navigation.goBack()} />
         
         <Button title="Calculate"
-        color="#ffcc00" /> 
+        color="#27ae60" /> 
       </View>
     );
   }
@@ -18,7 +18,7 @@ function Transport({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#0f270e',
+      backgroundColor: '#001315',
       alignItems: 'center',
       justifyContent: 'center',
      
