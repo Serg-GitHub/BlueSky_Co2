@@ -12,7 +12,7 @@ function Home({navigation}){
         <Button
          title= "Go to food"
          onPress={()=> navigation.navigate("food")}/>
-        </View>
+        </View> 
     ) 
     
     
