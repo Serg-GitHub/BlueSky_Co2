@@ -8,7 +8,7 @@ function HomeScreen({ navigation }) {
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style= {styles.container}>
 
-        <Text style={styles.text}>Hi User!</Text>
+        <Text style={styles.text}>Hi User</Text>
         <Image
       source={{ uri: 'https://media0.giphy.com/media/Z8k6qo0AVIsPdROQNd/giphy.gif?cid=ecf05e47o5wz1yyzqvovp9xkj9abanqx5j4tfntl30tcums3&rid=giphy.gif&ct=g' }}
       style={{ width:360, height: 200 }}
