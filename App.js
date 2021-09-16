@@ -1,37 +1,44 @@
-import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
+import HomeScreen from './screens/home';
+import { createStackNavigator } from '@react-navigation/stack';
 
+// import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
+
+const Stack = createStackNavigator();
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Hello Craig!, how are you?</Text>
-      <StatusBar style="auto" />
-      <Image
-         
-             source={{
-             width:200,
-             height:300,
-             uri:"https://picsum.photos/200/300",}}/>
-    </SafeAreaView>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 50,
-  }  
-  
+    <NavigationContainer>
+       <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+          headerTintColor: 'white',
+          headerStyle: { backgroundColor: 'green' },
+          }}
+        />
+      </Stack.Navigator>
+     </NavigationContainer>
+  )
+        };
+    
+        
 
 
-
-});  
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+//   text: {
+//     fontSize: 50,
+//   }  
+// });  
 
 
 
