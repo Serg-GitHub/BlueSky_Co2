@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Button, Text } from "react-native";
+import { View, Button, Text, ScrollView } from "react-native";
 import { createStackNavigator } from "react-navigation-stack";
 import { NavigationContainer } from "react-navigation/native";
 export default Home 
@@ -14,7 +14,5 @@ function Home({navigation}){
          onPress={()=> navigation.navigate("food")}/>
         </View> 
     ) 
-    
-    
 }
 

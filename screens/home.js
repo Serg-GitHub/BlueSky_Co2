@@ -10,8 +10,8 @@ function HomeScreen({ navigation }) {
 
         <Text style={styles.text}>Hi User</Text>
         <Image
-      source={{ uri: 'https://media0.giphy.com/media/Z8k6qo0AVIsPdROQNd/giphy.gif?cid=ecf05e47o5wz1yyzqvovp9xkj9abanqx5j4tfntl30tcums3&rid=giphy.gif&ct=g' }}
-      style={{ width:360, height: 200 }}
+      source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
+      style={{ width:360, height: 250 }}
       />
         
         <Button
