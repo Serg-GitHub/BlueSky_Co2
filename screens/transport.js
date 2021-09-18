@@ -4,6 +4,7 @@ import { View, Button, Text, StyleSheet} from 'react-native';
 import carComponent from '../components/transportComponents/carComponent';
 
 
+
 function Transport({ navigation }) {
     return (
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -11,7 +12,7 @@ function Transport({ navigation }) {
         <Text>Transport screen</Text>
     
 
-        <Button title="Car" onPress={() => navigation.navigate('carComponent')} />
+        <Button title="carComponent" onPress={() => navigation.navigate('carComponent')} />
      
       
 
