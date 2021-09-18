@@ -6,6 +6,10 @@ import Food from './screens/food';
 import { createStackNavigator } from '@react-navigation/stack';
 import Transport from './screens/transport';
 import carComponent from './components/transportComponents/carComponent';
+import beefComponent from './components/foodComponents/beefComponent';
+import chickenComponent from './components/foodComponents/chickenComponent';
+import lambComponent from './components/foodComponents/lambComponent';
+import porkComponent from './components/foodComponents/porkComponent';
 // import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
 
 const Stack = createStackNavigator();
@@ -34,8 +38,29 @@ export default function App() {
         <Stack.Screen
         name= "carComponent"
         component={carComponent}
-        
         />
+
+        <Stack.Screen
+        name= "beef"
+        component={beefComponent}
+        />
+
+        <Stack.Screen
+        name= "chicken"
+        component={chickenComponent}
+        />
+
+        <Stack.Screen
+        name= "lamb"
+        component={lambComponent}
+        />
+
+        <Stack.Screen
+        name= "pork"
+        component={porkComponent}
+        />
+
+
 
       </Stack.Navigator>
      </NavigationContainer>
