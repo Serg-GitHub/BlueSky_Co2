@@ -31,7 +31,7 @@ function Transport({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'green',
+      backgroundColor: '#001315',
       alignItems: 'center',
       justifyContent: 'center',
     },

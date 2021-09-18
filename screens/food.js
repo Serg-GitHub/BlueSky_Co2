@@ -9,12 +9,22 @@ function Food({ navigation }) {
       <View style={styles.container}>
       
 
-        <Text>Food Activity</Text>
-        <Button title="beef" onPress={() => navigation.navigate('beef')} />
-        <Button title="chicken" onPress={() => navigation.navigate('chicken')} />
-        <Button title="lamb" onPress={() => navigation.navigate('lamb')} />
-        <Button title="pork" onPress={() => navigation.navigate('pork')} />
-        <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Text style={styles.text}>Food Activity</Text>
+        <Button 
+        color="#5cb85c"
+        title="beef" onPress={() => navigation.navigate('beef')} />
+        <Button 
+        color="#27ae60"
+        title="chicken" onPress={() => navigation.navigate('chicken')} />
+        <Button 
+        color="#5cb85c"
+        title="lamb" onPress={() => navigation.navigate('lamb')} />
+        <Button 
+        color="#27ae60"
+        title="pork" onPress={() => navigation.navigate('pork')} />
+        <Button 
+        color="#5cb85c"
+        title="Go back" onPress={() => navigation.goBack()} />
         
         
       </View>
@@ -22,15 +32,19 @@ function Food({ navigation }) {
   }
 
   const styles = StyleSheet.create({
-      container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-      text: {
-        fontSize: 50,
-      }  
+    container: {
+      flex: 1,
+      backgroundColor: '#001315',
+      alignItems: 'center',
+      justifyContent: 'center',
+     
+      
+    },
+    text: {
+      fontSize: 40,
+      color: 'white',
+      
+    },
     });  
    
 
