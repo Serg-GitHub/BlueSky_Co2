@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { View, Button, Text, StyleSheet } from 'react-native';
-import TransportMode from '../components/transportModes';
+import { View, Button, Text, StyleSheet} from 'react-native';
+// import TransportMode from '../components/transportComponents/transportModes';
+import carComponent from '../components/transportComponents/carComponent';
 
 
 function Transport({ navigation }) {
@@ -8,11 +9,17 @@ function Transport({ navigation }) {
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style={styles.container}>
         <Text>Transport screen</Text>
+    
+
+        <Button title="Car" onPress={() => navigation.navigate('carComponent')} />
+     
+      
 
         <Button title="Go back" onPress={() => navigation.goBack()} />
-        <Button title="Calculate"/>
-        <TransportMode/>
+        {/* <Button title="Calculate"/> */}
+        {/* <TransportMode/> */}
       </View>
+      
     );
   }
 
@@ -26,5 +33,6 @@ function Transport({ navigation }) {
     text: {
       fontSize: 50,
     }  
+   
   });  
 export default Transport;

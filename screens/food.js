@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, Button, Text, StyleSheet } from 'react-native';
-import Meat from '../components/meats';
+import Meat from '../components/foodComponents/meats';
 
 
 
@@ -13,7 +13,7 @@ function Food({ navigation }) {
         <Text>Food Activity</Text>
         <Button title="Go back" onPress={() => navigation.goBack()} />
         <Button title="Add a transport Activity" onPress={() => navigation.navigate('Transport')} />
-        <Meat/>
+        {/* <Meat/> */}
 
       </View>
     );
@@ -22,7 +22,7 @@ function Food({ navigation }) {
   const styles = StyleSheet.create({
       container: {
         flex: 1,
-        backgroundColor: 'dodgerblue',
+        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
       },

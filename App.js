@@ -5,6 +5,7 @@ import HomeScreen from './screens/home';
 import Food from './screens/food';
 import { createStackNavigator } from '@react-navigation/stack';
 import Transport from './screens/transport';
+import carComponent from './components/transportComponents/carComponent';
 // import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
 
 const Stack = createStackNavigator();
@@ -29,6 +30,13 @@ export default function App() {
         name= "Transport"
         component={Transport}
         />
+   
+        <Stack.Screen
+        name= "Car"
+        component={carComponent}
+        
+        />
+
       </Stack.Navigator>
      </NavigationContainer>
      
