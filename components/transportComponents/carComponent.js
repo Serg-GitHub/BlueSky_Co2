@@ -5,7 +5,7 @@ import { View, Text } from "react-native";
 const carComponent=()=>{
     return(
         <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
-        <Text>i'm a car</Text>
+        <Text>im a car</Text>
         </View>
     )   
     

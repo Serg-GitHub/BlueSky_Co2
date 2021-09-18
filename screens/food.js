@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { View, Button, Text, StyleSheet } from 'react-native';
-// import Meat from '../components/foodComponents/meats';
 
 
 
 function Food({ navigation }) {
     return (
-      // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      
       <View style={styles.container}>
-      {/* </View> */}
+      
 
         <Text>Food Activity</Text>
         <Button title="beef" onPress={() => navigation.navigate('beef')} />
@@ -16,9 +15,8 @@ function Food({ navigation }) {
         <Button title="lamb" onPress={() => navigation.navigate('lamb')} />
         <Button title="pork" onPress={() => navigation.navigate('pork')} />
         <Button title="Go back" onPress={() => navigation.goBack()} />
-        <Button title="Add a transport Activity" onPress={() => navigation.navigate('Transport')} />
-        {/* <Meat/> */}
-
+        
+        
       </View>
     );
   }
