@@ -9,18 +9,18 @@ function Food({ navigation }) {
       <View style={styles.container}>
       
 
-      <Text style={styles.text}>Food Activity</Text>
+      <Text style={styles.text}>Food Type</Text>
         <Button 
-        color="#5cb85c"
+        color="#ff0000"
         title="beef" onPress={() => navigation.navigate('beef')} />
         <Button 
-        color="#27ae60"
+        color="#ffa500"
         title="chicken" onPress={() => navigation.navigate('chicken')} />
         <Button 
-        color="#5cb85c"
+        color="#4b0082"
         title="lamb" onPress={() => navigation.navigate('lamb')} />
         <Button 
-        color="#27ae60"
+        color="#0000ff"
         title="pork" onPress={() => navigation.navigate('pork')} />
         <Button 
         color="#5cb85c"

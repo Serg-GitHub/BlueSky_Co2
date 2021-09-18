@@ -15,11 +15,11 @@ function HomeScreen({ navigation }) {
     />
       
       <Button
-      title="Add a Food Activity"
+      title="Food"
       color="#5cb85c"
       onPress={() => navigation.navigate('Food')}
       />
-      <Button title="Add a transport Activity" 
+      <Button title="Transport" 
       color="#27ae60"
       onPress={() => navigation.navigate('Transport')} />
 

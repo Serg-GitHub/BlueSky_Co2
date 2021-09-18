@@ -9,17 +9,23 @@ function Transport({ navigation }) {
     return (
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style={styles.container}>
-        <Text>Transport screen</Text>
+        <Text>Transport mode</Text>
     
 
-        <Button title="Car" onPress={() => navigation.navigate('Car')} />
-        <Button title="Bus" onPress={() => navigation.navigate('Bus')} />
-        <Button title="Bicycle" onPress={() => navigation.navigate('Bicycle')} />
-        <Button title="Train" onPress={() => navigation.navigate('Train')} />
-
-     
-      
-
+        <Button 
+        color="#ff0000"
+        title="Car" onPress={() => navigation.navigate('Car')} />
+        <Button 
+        color="#ffa500"
+        title="Bus" onPress={() => navigation.navigate('Bus')} />
+        <Button 
+        color="#0000ff"
+        title="Train" onPress={() => navigation.navigate('Train')} />
+        
+        <Button 
+        color="#5cb85c"
+        title="Bicycle" onPress={() => navigation.navigate('Bicycle')} />
+        
         <Button title="Go back" onPress={() => navigation.goBack()} />
         {/* <Button title="Calculate"/> */}
         {/* <TransportMode/> */}
@@ -31,7 +37,7 @@ function Transport({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#001315',
+      backgroundColor: '#ffffff',
       alignItems: 'center',
       justifyContent: 'center',
     },

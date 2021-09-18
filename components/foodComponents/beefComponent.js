@@ -6,7 +6,7 @@ const beefComponent=()=>{
          const [number, onChangeNumber] = React.useState(null);
 
     return(
-        <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
+      <View style={styles.container}>
         <Text>How many kilograms of Beef do you eat a week?</Text>
         <TextInput
         style={styles.input}
@@ -29,5 +29,16 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       padding: 10,
     },
+
+    container: {
+      flex: 1,
+      backgroundColor: '#ffffff',
+      alignItems: 'center',
+      justifyContent: 'center',
+
+
+    },
+  
+  
   });
 export default beefComponent
