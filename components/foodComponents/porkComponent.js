@@ -9,7 +9,7 @@ const porkComponent=()=>{
         <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
         <Text>How many kilograms of Pork do you eat a week?</Text>
         <TextInput
-        style={styles.input}
+        style={styles.input}   
         onChangeText={onChangeNumber}
         value={number}
         placeholder="Enter number"
