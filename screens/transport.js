@@ -12,7 +12,11 @@ function Transport({ navigation }) {
         <Text>Transport screen</Text>
     
 
-        <Button title="carComponent" onPress={() => navigation.navigate('carComponent')} />
+        <Button title="Car" onPress={() => navigation.navigate('Car')} />
+        <Button title="Bus" onPress={() => navigation.navigate('Bus')} />
+        <Button title="Bicycle" onPress={() => navigation.navigate('Bicycle')} />
+        <Button title="Train" onPress={() => navigation.navigate('Train')} />
+
      
       
 
