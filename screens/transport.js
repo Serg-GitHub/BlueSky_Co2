@@ -9,7 +9,7 @@ function Transport({ navigation }) {
     return (
       // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <View style={styles.container}>
-        <Text>Transport mode</Text>
+        <Text style={styles.text}>Transport mode</Text>
     
 
         <Button 
@@ -37,12 +37,15 @@ function Transport({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#ffffff',
+      backgroundColor: '#001315',
       alignItems: 'center',
       justifyContent: 'center',
     },
     text: {
-      fontSize: 50,
+      fontSize: 40,
+      color: 'white',
+      letterSpacing: 10,
+
     }  
    
   });  

@@ -37,8 +37,10 @@ container: {
   
 },
 text: {
+  letterSpacing: 10,
   fontSize: 40,
   color: 'white',
+  
   
 },
 

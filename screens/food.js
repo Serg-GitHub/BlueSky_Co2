@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { View, Button, Text, StyleSheet } from 'react-native';
+import { View, Button, Text, StyleSheet, requireNativeComponent } from 'react-native';
+
 
 
 
@@ -10,19 +11,20 @@ function Food({ navigation }) {
       
 
       <Text style={styles.text}>Food Type</Text>
-        <Button 
+        
+        <Button style={styles.button}
         color="#ff0000"
         title="beef" onPress={() => navigation.navigate('beef')} />
-        <Button 
+        <Button style={styles.button}
         color="#ffa500"
         title="chicken" onPress={() => navigation.navigate('chicken')} />
-        <Button 
+        <Button style={styles.button}
         color="#4b0082"
         title="lamb" onPress={() => navigation.navigate('lamb')} />
-        <Button 
+        <Button style={styles.button}
         color="#0000ff"
         title="pork" onPress={() => navigation.navigate('pork')} />
-        <Button 
+        <Button style={styles.button}
         color="#5cb85c"
         title="Go back" onPress={() => navigation.goBack()} />
         
@@ -43,8 +45,11 @@ function Food({ navigation }) {
     text: {
       fontSize: 40,
       color: 'white',
+      letterSpacing: 10,
+      
       
     },
+
     });  
    
 
