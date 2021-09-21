@@ -1,16 +1,21 @@
 import * as React from 'react';
 import { View, Button, Text, StyleSheet, Image } from 'react-native';
-// import Food from './food';
+
 
 function HomeScreen({ route, navigation }) {
   const{carNumber} = route.params || {}
+  const{busNumber} = route.params || {}
+  const{trainNumber} = route.params || {}
+  const{bicycleNumber} = route.params || {}
   return (
     
     
     <View style= {styles.container}>
     <Text style={styles.text}>Hi User</Text>
     <Text style={styles.text}>You Have Driven{carNumber}km's</Text>
-    <Text style={styles.text}>You Have Driven  km's</Text>
+    <Text style={styles.text}>You Have travelled {busNumber} km's</Text>
+    <Text style={styles.text}>You Have travelled {trainNumber} km's</Text>
+    <Text style={styles.text}>You Have ridden {bicycleNumber} km's</Text>
 
 
      

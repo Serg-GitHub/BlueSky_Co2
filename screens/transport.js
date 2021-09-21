@@ -1,31 +1,31 @@
 import * as React from 'react';
 import { View, Button, Text, StyleSheet} from 'react-native';
-// import TransportMode from '../components/transportComponents/transportModes';
+
 import carComponent from '../components/transportComponents/carComponent';
 
 
 
 function Transport({ navigation }) {
     return (
-      // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+     
       <View style={styles.container}>
         <Text style={styles.text}>Transport mode</Text>
     
 
         <Button 
         color="#ff0000"
-        title="Car" onPress={() => navigation.navigate({name: 'Car', params: {onChangeCarNumber: null }})} />
+        title="Car" onPress={() => navigation.navigate({ name: 'Car', params: {onChangeCarNumber: null }})} />
         
         <Button 
         color="#ffa500"
-        title="Bus" onPress={() => navigation.navigate('Bus')} />
+        title="Bus" onPress={() => navigation.navigate({ name: 'Bus', params: {onChangeBusNumber: null }})} />
         <Button 
         color="#0000ff"
-        title="Train" onPress={() => navigation.navigate('Train')} />
+        title="Train" onPress={() => navigation.navigate({ name: 'Train', params: {onChangeTrainNumber: null}})} />
         
         <Button 
         color="#5cb85c"
-        title="Bicycle" onPress={() => navigation.navigate('Bicycle')} />
+        title="Bicycle" onPress={() => navigation.navigate({name:'Bicycle', params: {onChangeBicycleNumber: null}})} />
         
         <Button title="Go back" onPress={() => navigation.goBack()} />
         {/* <Button title="Calculate"/> */}

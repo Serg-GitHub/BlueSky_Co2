@@ -20,6 +20,10 @@ import trainComponent from './components/transportComponents/trainComponent';
 const Stack = createStackNavigator();
 export default function App() {
   const [carNumber, onChangeCarNumber] = React.useState(null);
+  const [busNumber, onChangeBusNumber] = React.useState(null);
+  const [trainNumber, onChangeTrainNumber] = React.useState(null);
+  const [bicycleNumber, onChangeBicycleNumber] = React.useState(null);
+  
   return (
     
     <NavigationContainer>

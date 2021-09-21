@@ -2,12 +2,14 @@ import * as React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 
-const bicycleComponent=()=>{
+const bicycleComponent=({route, navigation})=>{
          const [number, onChangeNumber] = React.useState(null);
+         const {onChangeBicycleNumber} = route.params;
 
     return(
         <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
         <Text>How many kilometers do you Cycle a week?</Text>
+        <Text>{onChangeBicycleNumber}</Text>
         <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -16,7 +18,11 @@ const bicycleComponent=()=>{
         keyboardType="numeric"
      
       />
-      <Button title = "Add Activity"/>
+      <Button title = "Add Activity" onPress={()=>{
+      navigation.navigate("Home",{
+      bicycleNumber : number
+      })
+      }}/>
         
       </View>
     )   
