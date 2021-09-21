@@ -7,6 +7,10 @@ function HomeScreen({ route, navigation }) {
   const [busNumberState, setBusNumberState] = React.useState(0);
   const [trainNumberState, setTrainNumberState] = React.useState(0);
   const [bicycleNumberState, setBicycleNumberState] = React.useState(0);
+  const [beefNumberState, setBeefNumberState] = React.useState(0);
+  const [chickenNumberState, setChickenNumberState] = React.useState(0);
+  const [porkNumberState, setPorkNumberState] = React.useState(0);
+  const [lambNumberState, setLambNumberState] = React.useState(0);
 
 
   const{carNumber} = route.params || {}
@@ -17,14 +21,14 @@ function HomeScreen({ route, navigation }) {
   if (trainNumber && trainNumber !== trainNumberState) setTrainNumberState(trainNumber)
   const{bicycleNumber} = route.params || {}
   if (bicycleNumber && bicycleNumber !== bicycleNumberState) setBicycleNumberState(bicycleNumber)
-  // const{beefNumber} = route.params || {}
-  // if (beefNumber && beefNumber !== beefNumberState) setBeefNumberState(beefNumber)
-  // const{chickenNumber} = route.params || {}
-  // if (chickenNumber && chickenNumber !== chickenNumberState) setChickenNumberState(chickenNumber)
-  // const{porkNumber} = route.params || {}
-  // if (porkNumber && porkNumber !== porkNumberState) setPorkNumberState(porkNumber)
-  // const{lambNumber} = route.params || {}
-  // if (lambNumber && lambNumber !== lambNumberState) setLambNumberState(lambNumber)
+  const{beefNumber} = route.params || {}
+  if (beefNumber && beefNumber !== beefNumberState) setBeefNumberState(beefNumber)
+  const{chickenNumber} = route.params || {}
+  if (chickenNumber && chickenNumber !== chickenNumberState) setChickenNumberState(chickenNumber)
+  const{porkNumber} = route.params || {}
+  if (porkNumber && porkNumber !== porkNumberState) setPorkNumberState(porkNumber)
+  const{lambNumber} = route.params || {}
+  if (lambNumber && lambNumber !== lambNumberState) setLambNumberState(lambNumber)
   
   const co2CarTotal = () => {
     const carTotal = carNumberState * 0.000168
@@ -42,6 +46,22 @@ function HomeScreen({ route, navigation }) {
     const bicycleTotal = bicycleNumberState * 0.000016
     return bicycleTotal
   }
+  const co2BeefTotal = () => {
+    const beefTotal = beefNumberState * 0.0000364
+    return beefTotal
+  }
+  const co2ChickenTotal = () => {
+    const chickenTotal = chickenNumberState * 0.00000365
+    return chickenTotal
+  }
+  const co2PorkTotal = () => {
+    const porkTotal = porkNumberState * 0.00000577
+    return porkTotal
+  }
+  const co2LambTotal = () => {
+    const lambTotal = lambNumberState * 0.00001090
+    return lambTotal
+  }
    
 
 
@@ -54,6 +74,10 @@ function HomeScreen({ route, navigation }) {
     <Text style={styles.text}>{co2BusTotal()}bus</Text>
     <Text style={styles.text}>{co2TrainTotal()}train</Text>
     <Text style={styles.text}>{co2BicycleTotal()}bicycle</Text>
+    <Text style={styles.text}>{co2BeefTotal()}beef</Text>
+    <Text style={styles.text}>{co2ChickenTotal()}chicken</Text>
+    <Text style={styles.text}>{co2PorkTotal()}pork</Text>
+    <Text style={styles.text}>{co2LambTotal()}lamb</Text>
 
     {/* <Text style={styles.text}>{co2TotalCalculation()}total</Text> */}
 
@@ -97,7 +121,7 @@ container: {
   
 },
 text: {
-  letterSpacing: 10,
+
   fontSize: 15,
   color: 'white',
   
