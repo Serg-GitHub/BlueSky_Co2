@@ -47,19 +47,19 @@ function HomeScreen({ route, navigation }) {
     return bicycleTotal
   }
   const co2BeefTotal = () => {
-    const beefTotal = beefNumberState * 0.0000364
+    const beefTotal = beefNumberState * 36.4
     return beefTotal
   }
   const co2ChickenTotal = () => {
-    const chickenTotal = chickenNumberState * 0.00000365
+    const chickenTotal = chickenNumberState * 36.5
     return chickenTotal
   }
   const co2PorkTotal = () => {
-    const porkTotal = porkNumberState * 0.00000577
+    const porkTotal = porkNumberState * 57.7
     return porkTotal
   }
   const co2LambTotal = () => {
-    const lambTotal = lambNumberState * 0.00001090
+    const lambTotal = lambNumberState * 10.9
     return lambTotal
   }
    
