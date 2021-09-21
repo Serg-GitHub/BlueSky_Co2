@@ -2,12 +2,14 @@ import * as React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 
-const beefComponent=()=>{
+const beefComponent=({navigation})=>{
          const [number, onChangeNumber] = React.useState(null);
+         
 
     return(
       <View style={styles.container}>
         <Text>How many kilograms of Beef do you eat a week?</Text>
+        
         <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -16,7 +18,11 @@ const beefComponent=()=>{
         keyboardType="numeric"
      
       />
-      <Button title = "Add Activity"/>
+      <Button title = "Add Activity" onPress={()=>{
+        navigation.navigate("Home", {
+          beefNumber: number
+        })
+      }} />
         
       </View>
     )   

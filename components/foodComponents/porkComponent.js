@@ -2,7 +2,7 @@ import * as React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 
-const porkComponent=()=>{
+const porkComponent=({navigation})=>{
          const [number, onChangeNumber] = React.useState(null);
 
     return(
@@ -16,8 +16,11 @@ const porkComponent=()=>{
         keyboardType="numeric"
      
       />
-      <Button title = "Add Activity"/>
-        
+            <Button title = "Add Activity" onPress={()=>{
+        navigation.navigate('Home', {
+          porkNumber: number
+        })
+      }} />
       </View>
     )   
     

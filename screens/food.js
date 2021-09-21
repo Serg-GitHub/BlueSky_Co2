@@ -15,9 +15,11 @@ function Food({ navigation }) {
         <Button style={styles.button}
         color="#ff0000"
         title="beef" onPress={() => navigation.navigate('beef')} />
+
         <Button style={styles.button}
         color="#ffa500"
         title="chicken" onPress={() => navigation.navigate('chicken')} />
+
         <Button style={styles.button}
         color="#4b0082"
         title="lamb" onPress={() => navigation.navigate('lamb')} />

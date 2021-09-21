@@ -2,7 +2,7 @@ import * as React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 
-const lambComponent=()=>{
+const lambComponent=({navigation})=>{
          const [number, onChangeNumber] = React.useState(null);
 
     return(
@@ -16,7 +16,11 @@ const lambComponent=()=>{
         keyboardType="numeric"
      
       />
-      <Button title = "Add Activity"/>
+           <Button title = "Add Activity" onPress={()=>{
+        navigation.navigate('Home', {
+          lambNumber: number
+        })
+      }} />
         
       </View>
     )   

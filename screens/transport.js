@@ -14,18 +14,18 @@ function Transport({ navigation }) {
 
         <Button 
         color="#ff0000"
-        title="Car" onPress={() => navigation.navigate({ name: 'Car', params: {onChangeCarNumber: null }})} />
+        title="Car" onPress={() => navigation.navigate('Car')} />
         
         <Button 
         color="#ffa500"
-        title="Bus" onPress={() => navigation.navigate({ name: 'Bus', params: {onChangeBusNumber: null }})} />
+        title="Bus" onPress={() => navigation.navigate('Bus')} />
         <Button 
         color="#0000ff"
-        title="Train" onPress={() => navigation.navigate({ name: 'Train', params: {onChangeTrainNumber: null}})} />
+        title="Train" onPress={() => navigation.navigate('Train')} />
         
         <Button 
         color="#5cb85c"
-        title="Bicycle" onPress={() => navigation.navigate({name:'Bicycle', params: {onChangeBicycleNumber: null}})} />
+        title="Bicycle" onPress={() => navigation.navigate('Bicycle')} />
         
         <Button title="Go back" onPress={() => navigation.goBack()} />
         {/* <Button title="Calculate"/> */}

@@ -13,7 +13,8 @@ import porkComponent from './components/foodComponents/porkComponent';
 import busComponent from './components/transportComponents/busComponent';
 import bicycleComponent from './components/transportComponents/bicycleComponent';
 import trainComponent from './components/transportComponents/trainComponent';
-// import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
+import Home from './screens/home';
+
 
 
 
@@ -23,6 +24,10 @@ export default function App() {
   const [busNumber, onChangeBusNumber] = React.useState(null);
   const [trainNumber, onChangeTrainNumber] = React.useState(null);
   const [bicycleNumber, onChangeBicycleNumber] = React.useState(null);
+  const [beefNumber, onChangeBeefNumber] = React.useState(null);
+  const [chickenNumber, onChangeChickenNumber] = React.useState(null);
+  const [lambNumber, onChangeLambNumber] = React.useState(null);
+  const [porkNumber, onChangePorkNumber] = React.useState(null);
   
   return (
     

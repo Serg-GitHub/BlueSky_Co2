@@ -3,16 +3,13 @@ import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 import Home from "../../screens/homescreen";
 
 
-const carComponent=({route, navigation })=>{
-         const [number, onChangeNumber] = React.useState(null);
-         const { onChangeCarNumber} = route.params;
-
-         
+const carComponent=({navigation})=>{
+         const [number, onChangeNumber] = React.useState(null);  
 
     return(
         <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
         <Text>How many kilometers do you drive a week?</Text>
-        <Text>{onChangeCarNumber}</Text>
+       
         <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
