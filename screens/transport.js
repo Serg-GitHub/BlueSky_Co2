@@ -14,7 +14,8 @@ function Transport({ navigation }) {
 
         <Button 
         color="#ff0000"
-        title="Car" onPress={() => navigation.navigate('Car')} />
+        title="Car" onPress={() => navigation.navigate({name: 'Car', params: {onChangeCarNumber: null }})} />
+        
         <Button 
         color="#ffa500"
         title="Bus" onPress={() => navigation.navigate('Bus')} />

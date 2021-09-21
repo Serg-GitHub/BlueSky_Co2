@@ -15,9 +15,13 @@ import bicycleComponent from './components/transportComponents/bicycleComponent'
 import trainComponent from './components/transportComponents/trainComponent';
 // import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
 
+
+
 const Stack = createStackNavigator();
 export default function App() {
+  const [carNumber, onChangeCarNumber] = React.useState(null);
   return (
+    
     <NavigationContainer>
        <Stack.Navigator>
         <Stack.Screen

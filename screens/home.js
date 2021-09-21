@@ -2,13 +2,18 @@ import * as React from 'react';
 import { View, Button, Text, StyleSheet, Image } from 'react-native';
 // import Food from './food';
 
-function HomeScreen({ navigation }) {
+function HomeScreen({ route, navigation }) {
+  const{carNumber} = route.params || {}
   return (
     
-    // <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    
     <View style= {styles.container}>
+    <Text style={styles.text}>Hi User</Text>
+    <Text style={styles.text}>You Have Driven{carNumber}km's</Text>
+    <Text style={styles.text}>You Have Driven  km's</Text>
 
-      <Text style={styles.text}>Hi User</Text>
+
+     
       <Image
     source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
     style={{ width:360, height: 250 }}
@@ -38,7 +43,7 @@ container: {
 },
 text: {
   letterSpacing: 10,
-  fontSize: 40,
+  fontSize: 20,
   color: 'white',
   
   
