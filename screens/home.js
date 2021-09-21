@@ -106,4 +106,4 @@ text: {
 
 });  
 
-export default HomeScreen;
+export default HomeScreen; 
