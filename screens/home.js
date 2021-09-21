@@ -11,6 +11,8 @@ function HomeScreen({ route, navigation }) {
   const [chickenNumberState, setChickenNumberState] = React.useState(0);
   const [porkNumberState, setPorkNumberState] = React.useState(0);
   const [lambNumberState, setLambNumberState] = React.useState(0);
+  const [calculationState, setCalculationState] = React.useState(0);
+
 
 
   const{carNumber} = route.params || {}
@@ -29,6 +31,8 @@ function HomeScreen({ route, navigation }) {
   if (porkNumber && porkNumber !== porkNumberState) setPorkNumberState(porkNumber)
   const{lambNumber} = route.params || {}
   if (lambNumber && lambNumber !== lambNumberState) setLambNumberState(lambNumber)
+  const{calculation} = route.params || {}
+  if (calculation && calculation !== calculationState) setCalculationState(calculation)
   
   const co2CarTotal = () => {
     const carTotal = carNumberState * 0.000168
@@ -62,8 +66,19 @@ function HomeScreen({ route, navigation }) {
     const lambTotal = lambNumberState * 10.9
     return lambTotal
   }
-   
+  const handleCalculation = () => {
 
+    const carTotal = setCarNumberState * 0.000168
+    const trainTotal = setTrainNumberState * 0.000037
+    const busTotal = setBusNumberState * 0.000103
+    const bikeTotal = setBicycleNumberState * 0
+    
+
+    const total = carTotal + trainTotal + busTotal + bikeTotal 
+    return total
+
+  }
+   
 
   return (
     
@@ -79,20 +94,12 @@ function HomeScreen({ route, navigation }) {
     <Text style={styles.text}>{co2PorkTotal()}pork</Text>
     <Text style={styles.text}>{co2LambTotal()}lamb</Text>
 
+    <Text style={styles.text}>{handleCalculation()}total</Text>
+    
+
     {/* <Text style={styles.text}>{co2TotalCalculation()}total</Text> */}
 
-  
-
-
-
-    {/* <Text style={styles.text}>{co2Total()}km's travelled</Text> */} 
-    {/* <Text style={styles.text}>{beefNumber}Kg,s eaten(beef)</Text>
-    <Text style={styles.text}>You Have eaten {chickenNumber} kilos of chicken</Text>
-    <Text style={styles.text}>You Have eaten {porkNumber} kilos of pork</Text>
-    <Text style={styles.text}>You Have eaten {lambNumber} kilos of lamb</Text> */}
-
-
-     
+      
       <Image
     source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
     style={{ width:360, height: 250 }}
