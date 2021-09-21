@@ -42,10 +42,7 @@ function HomeScreen({ route, navigation }) {
     const bicycleTotal = bicycleNumberState * 0.000016
     return bicycleTotal
   }
-  // const co2TotalCalculation = () => {
-  //    const co2Total = bicycleTotal + trainTotal + busTotal + carTotal
-  //   return co2Total
-  // }
+  
 
 
   return (
