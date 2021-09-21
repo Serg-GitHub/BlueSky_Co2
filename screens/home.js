@@ -42,7 +42,7 @@ function HomeScreen({ route, navigation }) {
     const bicycleTotal = bicycleNumberState * 0.000016
     return bicycleTotal
   }
-  
+   
 
 
   return (
