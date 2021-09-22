@@ -1,26 +1,23 @@
 import React from "react";
 import { ScrollView, Dimensions } from "react-native";
 import { ProgressChart } from "react-native-chart-kit";
-import HomeScreen from "./home";
+
 
 
 const Graph = ({}) =>{
     const data = {
         labels: ["Car", "Bus", "Train", "Bicycle"], // optional
         data: [0.8, 0.6, 0.4, 0.2]
+        // data:[]
       };
 
 
 
-    const carTotal = carTotal;
-    const busTotal = busTotal;
-    const trainTotal = trainTotal;
-    const bicycleTotal = bicycleTotal;
+    // const carTotal = carNumberState;
+    // const busTotal = busNumberState;
+    // const trainTotal = trainTotal;
+    // const bicycleTotal = bicycleTotal;
 
-
- 
-
-       
     const screenWidth = Dimensions.get("window").width;
 
     const chartConfig = {
@@ -36,10 +33,10 @@ const Graph = ({}) =>{
 
     return (
         <ProgressChart
-            carTotal={carTotal}
-            busTotal={busTotal}
-            trainTotal={trainTotal}
-            bicycleTotal={bicycleTotal}
+            // carTotal={carTotal}
+            // busTotal={busTotal}
+            // trainTotal={trainTotal}
+            // bicycleTotal={bicycleTotal}
             data={data}
             width={575}
             height={400}
