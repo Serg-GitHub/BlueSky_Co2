@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, Button, Text, StyleSheet, Image } from 'react-native';
+import Graph from './graph';
 
 
 function HomeScreen({ route, navigation }) {
@@ -91,11 +92,11 @@ function HomeScreen({ route, navigation }) {
 
     {/* <Text style={styles.text}>{co2TotalCalculation()}total</Text> */}
 
+      <Graph></Graph>
+
       
-      <Image
-    source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
-    style={{ width:360, height: 250 }}
-    />
+ 
+    
       
       <Button
       title="Food"
