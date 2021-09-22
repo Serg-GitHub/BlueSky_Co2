@@ -25,6 +25,7 @@ const beefComponent=({navigation})=>{
       beefNumber: number
       })
       }}/>
+      
       </View>
       </View>  
     )   
