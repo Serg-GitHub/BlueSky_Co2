@@ -28,7 +28,7 @@ const Graph = ({}) =>{
         backgroundGradientFromOpacity: 0.1,
         backgroundGradientTo: "#08130D",
         backgroundGradientToOpacity: 0.1,
-        color: (opacity = 2) => `rgba(29, 255, 146, ${opacity})`,
+        color: (opacity = 2) => `rgba(29, 256, 146, ${opacity})`,
         strokeWidth: 6, // optional, default 3
         barPercentage: 0.6,
         useShadowColorFromDataset: false // optional
