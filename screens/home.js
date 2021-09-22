@@ -4,6 +4,7 @@ import styles from "./styles"
 import Graph from './graph';
 
 
+
 function HomeScreen({ route, navigation }) {
   const [carNumberState, setCarNumberState] = React.useState(0);
   const [busNumberState, setBusNumberState] = React.useState(0);
@@ -50,8 +51,11 @@ function HomeScreen({ route, navigation }) {
   return (
     
     
+    
     <View style= {styles.container}>
-    <Text style={styles.text}>Hi User</Text>
+    <Text style={styles.header}>BlueSky Co2</Text>
+    <Text style={styles.text}>Hello, your carbon footprint for the week is</Text>
+    {/* <Text style={styles.text}>Hi User</Text>
     <Text style={styles.text}>{carTotal}car</Text>
     <Text style={styles.text}>{busTotal}bus</Text>
     <Text style={styles.text}>{trainTotal}train</Text>
@@ -61,12 +65,15 @@ function HomeScreen({ route, navigation }) {
     <Text style={styles.text}>{porkTotal}pork</Text>
     <Text style={styles.text}>{lambTotal}lamb</Text>
 
-    <Text style={styles.text}>{handleCalculation}total</Text>
+    <Text style={styles.text}>{handleCalculation}total</Text> */}
     
-    <Image
+    {/* <Image
     source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
     style={{ width:360, height: 250 }}
-    />
+    /> */}
+      <View style= {styles.graphView}>
+      <Graph style ={styles.graph}></Graph>
+      </View>
       <View style={styles.buttonView}>
       <Button style={styles.button}
       title="Food"
@@ -80,7 +87,7 @@ function HomeScreen({ route, navigation }) {
       color="#27ae60"
       onPress={() => navigation.navigate('Transport')} />
       </View>
-      <Graph></Graph>
+      
 
     </View>
   );

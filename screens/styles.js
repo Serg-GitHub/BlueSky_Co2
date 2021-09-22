@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
       backgroundColor: '#001315',
       alignItems: 'center',
       justifyContent: 'center',
-     
       
+     
     },
     text: {
     
@@ -38,6 +38,24 @@ const styles = StyleSheet.create({
       height: 33,
 
     },
+
+    graphView: {
+      
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginLeft: 60,
+      
+
+    },
+    header: {
+      fontSize: 40,
+      fontWeight: 'bold',
+      color: 'white',
+      margin: 20,
+      
+    }
+
+
     
     });  
 

@@ -33,7 +33,7 @@ function Transport({ navigation }) {
         <View style={styles.buttonView}>
         <Button style={styles.button}
         color="#5cb85c"
-        title="Bicycle" onPress={() => navigation.navigate('Bicycle')} />
+        title="Cycle" onPress={() => navigation.navigate('Cycle')} />
         </View>
         
         <View style={styles.buttonView}>

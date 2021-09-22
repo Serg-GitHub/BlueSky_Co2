@@ -108,7 +108,7 @@ export default function App() {
         />
 
         <Stack.Screen
-        name= "Bicycle"
+        name= "Cycle"
         component={bicycleComponent}
         options={{
          headerTintColor: 'white',

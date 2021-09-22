@@ -4,12 +4,16 @@ import { ProgressChart } from "react-native-chart-kit";
 
 
 
+
+
 const Graph = ({}) =>{
     const data = {
-        labels: ["Car", "Bus", "Train", "Bicycle"], // optional
-        data: [0.8, 0.6, 0.4, 0.2]
+        labels: ["Car", "Bus", "Train", "Cycle"], // optional
+        data: [0.8 , 0.6, 0.4, 0.2]
+        
         // data:[]
       };
+
 
 
 
@@ -22,7 +26,7 @@ const Graph = ({}) =>{
 
     const chartConfig = {
         backgroundGradientFrom: "#1E2929",
-        backgroundGradientFromOpacity: 0.1,
+        backgroundGradientFromOpacity: 0.0,
         backgroundGradientTo: "#08130D",
         backgroundGradientToOpacity: 0.1,
         color: (opacity = 2) => `rgba(29, 256, 146, ${opacity})`,
@@ -37,9 +41,9 @@ const Graph = ({}) =>{
             // busTotal={busTotal}
             // trainTotal={trainTotal}
             // bicycleTotal={bicycleTotal}
-            data={data}
-            width={575}
-            height={400}
+            data={data} 
+            width={290}
+            height={200}
             strokeWidth={16}
             radius={32}
             chartConfig={chartConfig}
