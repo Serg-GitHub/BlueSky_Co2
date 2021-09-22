@@ -21,9 +21,9 @@ const lambComponent=({navigation})=>{
         color= "#5cb85c"
         title = "Add Activity" onPress={()=>{
         navigation.navigate('Home', {
-          lambNumber: number
+        lambNumber: number
         })
-      }} />
+      }}/>
         
       </View>
       </View>

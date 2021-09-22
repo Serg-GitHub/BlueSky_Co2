@@ -20,8 +20,6 @@ import trainComponent from './components/transportComponents/trainComponent';
 
 const Stack = createStackNavigator();
 export default function App() {
-  
-  
   return (
     
     <NavigationContainer>

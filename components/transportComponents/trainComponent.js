@@ -1,39 +1,35 @@
 import * as React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
-
+import styles from "../../screens/styles";
 
 const trainComponent=({navigation})=>{
          const [number, onChangeNumber] = React.useState(null);
        
 
     return(
-        <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
-        <Text>How many kilometers do you travel by Train a week?</Text>
+      <View style={styles.container} >
+        <Text style={styles.text}>How many kilometers do you travel by Train a week?</Text>
        
-        <TextInput
-        style={styles.input}
+        <View style={styles.textInputView} >
+        <TextInput style={styles.textInput}
         onChangeText={onChangeNumber}
         value={number}
         placeholder="Enter number"
-        keyboardType="numeric"
+        keyboardType="numeric" />
      
-      />
-      <Button title = "Add Activity" onPress={()=>{
+       
+        <Button style={styles.button} 
+        color= "#5cb85c"
+        title = "Add Activity" onPress={()=>{
         navigation.navigate("Home", {
-          trainNumber: number
+        trainNumber: number
         })
       }}/>
         
       </View>
+      </View>
     )   
     
 }
-const styles = StyleSheet.create({
-    input: {
-      height: 40,
-      margin: 12,
-      borderWidth: 1,
-      padding: 10,
-    },
-  });
+
 export default trainComponent

@@ -11,8 +11,11 @@ const styles = StyleSheet.create({
     },
     text: {
     
-      fontSize: 15,
+      fontSize: 20,
+      fontWeight: 'bold',
       color: 'white',
+      textAlign: 'center',
+      marginHorizontal: 50,
       
       
     },
