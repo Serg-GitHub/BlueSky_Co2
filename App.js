@@ -43,54 +43,94 @@ export default function App() {
         />
         <Stack.Screen
           name="Food"
-          component={Food}        
+          component={Food}
+          options={{
+          headerTintColor: 'white',
+          headerStyle: { backgroundColor: 'green' },
+          }}        
         />
 
         <Stack.Screen
-        name= "Transport"
-        component={Transport}
+         name= "Transport"
+         component={Transport}
+         options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
         />
    
         <Stack.Screen
         name= "Car"
         component={carComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
         />
 
         <Stack.Screen
-        name= "beef"
+        name= "Beef"
         component={beefComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
         />
 
         <Stack.Screen
-        name= "chicken"
+        name= "Chicken"
         component={chickenComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
         />
 
         <Stack.Screen
-        name= "lamb"
+        name= "Lamb"
         component={lambComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
         />
 
         <Stack.Screen
-        name= "pork"
+        name= "Pork"
         component={porkComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
         />
 
         <Stack.Screen
         name= "Bus"
         component={busComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
 
         />
 
         <Stack.Screen
         name= "Bicycle"
         component={bicycleComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
 
         />
 
         <Stack.Screen
         name= "Train"
         component={trainComponent}
+        options={{
+         headerTintColor: 'white',
+         headerStyle: { backgroundColor: 'green' },
+        }}
 
         />
 

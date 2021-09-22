@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, Button, Text, StyleSheet, Image } from 'react-native';
+import styles from "./styles"
 
 
 function HomeScreen({ route, navigation }) {
@@ -96,37 +97,53 @@ function HomeScreen({ route, navigation }) {
     source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
     style={{ width:360, height: 250 }}
     />
-      
-      <Button
+      <View style={styles.buttonView}>
+      <Button style={styles.button}
       title="Food"
       color="#5cb85c"
       onPress={() => navigation.navigate('Food')}
       />
-      <Button title="Transport" 
+      </View>
+      <View style={styles.buttonView}>
+      <Button style={styles.button}
+       title="Transport" 
       color="#27ae60"
       onPress={() => navigation.navigate('Transport')} />
+      </View>
 
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-container: {
-  flex: 1,
-  backgroundColor: '#001315',
-  alignItems: 'center',
-  justifyContent: 'center',
+// const styles = StyleSheet.create({
+// container: {
+//   flex: 1,
+//   backgroundColor: '#001315',
+//   alignItems: 'center',
+//   justifyContent: 'center',
  
   
-},
-text: {
+// },
+// text: {
 
-  fontSize: 15,
-  color: 'white',
+//   fontSize: 15,
+//   color: 'white',
   
   
-},
+// },
+// button: {
+//   margin: 10,
+//   marginVertical: 20,
+//   justifyContent: 'space-around',
+// },
 
-});  
+// buttonView: {
+  
+//   marginVertical: 20,
+//   width: 120,
+  
+// },
+
+// });  
 
 export default HomeScreen; 

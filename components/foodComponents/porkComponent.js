@@ -1,36 +1,32 @@
 import * as React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
-
+import styles from "../../screens/styles";
 
 const porkComponent=({navigation})=>{
          const [number, onChangeNumber] = React.useState(null);
 
     return(
-        <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
-        <Text>How many kilograms of Pork do you eat a week?</Text>
-        <TextInput
-        style={styles.input}   
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Enter number"
-        keyboardType="numeric"
+      <View style={styles.container} >
+      <Text style={styles.text}>How many kilograms of Pork do you eat a week?</Text>
+      <View style={styles.textInputView} >
+      <TextInput style={styles.textInput} 
+      onChangeText={onChangeNumber}
+      value={number}
+      placeholder="Enter number"
+      keyboardType="numeric" />
      
-      />
-            <Button title = "Add Activity" onPress={()=>{
-        navigation.navigate('Home', {
-          porkNumber: number
-        })
-      }} />
+      
+      <Button style={styles.button} 
+      color= "#5cb85c"
+      title = "Add Activity" onPress={()=>{
+      navigation.navigate('Home', {
+      porkNumber: number
+      })
+      }}/>
+      </View>
       </View>
     )   
     
 }
-const styles = StyleSheet.create({
-    input: {
-      height: 40,
-      margin: 12,
-      borderWidth: 1,
-      padding: 10,
-    },
-  });
+
 export default porkComponent
