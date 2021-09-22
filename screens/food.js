@@ -14,18 +14,18 @@ function Food({ navigation }) {
         
         <Button style={styles.button}
         color="#ff0000"
-        title="beef" onPress={() => navigation.navigate('beef')} />
+        title="Beef" onPress={() => navigation.navigate('Beef')} />
 
         <Button style={styles.button}
         color="#ffa500"
-        title="chicken" onPress={() => navigation.navigate('chicken')} />
+        title="Chicken" onPress={() => navigation.navigate('Chicken')} />
 
         <Button style={styles.button}
         color="#4b0082"
-        title="lamb" onPress={() => navigation.navigate('lamb')} />
+        title="Lamb" onPress={() => navigation.navigate('Lamb')} />
         <Button style={styles.button}
         color="#0000ff"
-        title="pork" onPress={() => navigation.navigate('pork')} />
+        title="Pork" onPress={() => navigation.navigate('Pork')} />
         <Button style={styles.button}
         color="#5cb85c"
         title="Go back" onPress={() => navigation.goBack()} />

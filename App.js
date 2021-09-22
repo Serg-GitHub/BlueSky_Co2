@@ -13,21 +13,13 @@ import porkComponent from './components/foodComponents/porkComponent';
 import busComponent from './components/transportComponents/busComponent';
 import bicycleComponent from './components/transportComponents/bicycleComponent';
 import trainComponent from './components/transportComponents/trainComponent';
-import Home from './screens/home';
+
 
 
 
 
 const Stack = createStackNavigator();
 export default function App() {
-  const [carNumber, onChangeCarNumber] = React.useState(null);
-  const [busNumber, onChangeBusNumber] = React.useState(null);
-  const [trainNumber, onChangeTrainNumber] = React.useState(null);
-  const [bicycleNumber, onChangeBicycleNumber] = React.useState(null);
-  const [beefNumber, onChangeBeefNumber] = React.useState(null);
-  const [chickenNumber, onChangeChickenNumber] = React.useState(null);
-  const [lambNumber, onChangeLambNumber] = React.useState(null);
-  const [porkNumber, onChangePorkNumber] = React.useState(null);
   
   return (
     
@@ -57,22 +49,24 @@ export default function App() {
         />
 
         <Stack.Screen
-        name= "beef"
+        name= "Beef"
         component={beefComponent}
         />
-
         <Stack.Screen
-        name= "chicken"
+        name= "Chicken"
         component={chickenComponent}
         />
 
+
+  
+
         <Stack.Screen
-        name= "lamb"
+        name= "Lamb"
         component={lambComponent}
         />
 
         <Stack.Screen
-        name= "pork"
+        name= "Pork"
         component={porkComponent}
         />
 
