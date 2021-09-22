@@ -34,50 +34,42 @@ function HomeScreen({ route, navigation }) {
   const{calculation} = route.params || {}
   if (calculation && calculation !== calculationState) setCalculationState(calculation)
   
-  const co2CarTotal = () => {
+  
     const carTotal = carNumberState * 0.000168
-    return carTotal
-  }
-  const co2BusTotal = () => {
+    
+  
+  
     const busTotal = busNumberState * 0.000103
-    return busTotal
-  }
-  const co2TrainTotal = () => {
-    const trainTotal = trainNumberState * 0.000037
-    return trainTotal
-  }
-  const co2BicycleTotal = () => {
-    const bicycleTotal = bicycleNumberState * 0.000016
-    return bicycleTotal
-  }
-  const co2BeefTotal = () => {
-    const beefTotal = beefNumberState * 36.4
-    return beefTotal
-  }
-  const co2ChickenTotal = () => {
-    const chickenTotal = chickenNumberState * 36.5
-    return chickenTotal
-  }
-  const co2PorkTotal = () => {
-    const porkTotal = porkNumberState * 57.7
-    return porkTotal
-  }
-  const co2LambTotal = () => {
-    const lambTotal = lambNumberState * 10.9
-    return lambTotal
-  }
-  const handleCalculation = () => {
-
-    const carTotal = setCarNumberState * 0.000168
-    const trainTotal = setTrainNumberState * 0.000037
-    const busTotal = setBusNumberState * 0.000103
-    const bikeTotal = setBicycleNumberState * 0
     
 
-    const total = carTotal + trainTotal + busTotal + bikeTotal 
-    return total
 
-  }
+    const trainTotal = trainNumberState * 0.000037
+
+  
+  
+    const bicycleTotal = bicycleNumberState * 0.000016
+    
+
+ 
+    const beefTotal = beefNumberState * 36.4
+ 
+  
+
+    const chickenTotal = chickenNumberState * 36.5
+  
+  
+ 
+    const porkTotal = porkNumberState * 57.7
+   
+  
+  
+    const lambTotal = lambNumberState * 10.9
+    
+  
+  const handleCalculation =  carTotal + busTotal + bicycleTotal + trainTotal;
+
+   
+  
    
 
   return (
@@ -85,16 +77,16 @@ function HomeScreen({ route, navigation }) {
     
     <View style= {styles.container}>
     <Text style={styles.text}>Hi User</Text>
-    <Text style={styles.text}>{co2CarTotal()}car</Text>
-    <Text style={styles.text}>{co2BusTotal()}bus</Text>
-    <Text style={styles.text}>{co2TrainTotal()}train</Text>
-    <Text style={styles.text}>{co2BicycleTotal()}bicycle</Text>
-    <Text style={styles.text}>{co2BeefTotal()}beef</Text>
-    <Text style={styles.text}>{co2ChickenTotal()}chicken</Text>
-    <Text style={styles.text}>{co2PorkTotal()}pork</Text>
-    <Text style={styles.text}>{co2LambTotal()}lamb</Text>
+    <Text style={styles.text}>{carTotal}car</Text>
+    <Text style={styles.text}>{busTotal}bus</Text>
+    <Text style={styles.text}>{trainTotal}train</Text>
+    <Text style={styles.text}>{bicycleTotal}bicycle</Text>
+    <Text style={styles.text}>{beefTotal}beef</Text>
+    <Text style={styles.text}>{chickenTotal}chicken</Text>
+    <Text style={styles.text}>{porkTotal}pork</Text>
+    <Text style={styles.text}>{lambTotal}lamb</Text>
 
-    <Text style={styles.text}>{handleCalculation()}total</Text>
+    <Text style={styles.text}>{handleCalculation}total</Text>
     
 
     {/* <Text style={styles.text}>{co2TotalCalculation()}total</Text> */}
