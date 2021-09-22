@@ -20,15 +20,7 @@ import Home from './screens/home';
 
 const Stack = createStackNavigator();
 export default function App() {
-  const [carNumber, onChangeCarNumber] = React.useState(null);
-  const [busNumber, onChangeBusNumber] = React.useState(null);
-  const [trainNumber, onChangeTrainNumber] = React.useState(null);
-  const [bicycleNumber, onChangeBicycleNumber] = React.useState(null);
-  const [beefNumber, onChangeBeefNumber] = React.useState(null);
-  const [chickenNumber, onChangeChickenNumber] = React.useState(null);
-  const [lambNumber, onChangeLambNumber] = React.useState(null);
-  const [porkNumber, onChangePorkNumber] = React.useState(null);
-  
+
   return (
     
     <NavigationContainer>

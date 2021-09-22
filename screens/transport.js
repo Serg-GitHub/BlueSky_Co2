@@ -8,8 +8,8 @@ import carComponent from '../components/transportComponents/carComponent';
 
 function Transport({ navigation }) {
     return (
-     
-      <View style={styles.container}>
+      
+     <View style={styles.container}>
         <Text style={styles.text}>Transport mode</Text>
     
         <View style={styles.buttonView}>
@@ -40,26 +40,11 @@ function Transport({ navigation }) {
         <Button style={styles.button} 
         title="Go back" onPress={() => navigation.goBack()} />
         </View>
-        {/* <Button title="Calculate"/> */}
-        {/* <TransportMode/> */}
+
       </View>
       
     );
+    
   }
-
-  // const styles = StyleSheet.create({
-  //   container: {
-  //     flex: 1,
-  //     backgroundColor: '#001315',
-  //     alignItems: 'center',
-  //     justifyContent: 'center',
-  //   },
-  //   text: {
-  //     fontSize: 40,
-  //     color: 'white',
-  //     letterSpacing: 10,
-
-  //   }  
-   
-  // });  
+ 
 export default Transport;

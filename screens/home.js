@@ -36,42 +36,15 @@ function HomeScreen({ route, navigation }) {
   if (calculation && calculation !== calculationState) setCalculationState(calculation)
   
   
-    const carTotal = carNumberState * 0.000168
-    
-  
-  
-    const busTotal = busNumberState * 0.000103
-    
-
-
-    const trainTotal = trainNumberState * 0.000037
-
-  
-  
-    const bicycleTotal = bicycleNumberState * 0.000016
-    
-
- 
-    const beefTotal = beefNumberState * 36.4
- 
-  
-
-    const chickenTotal = chickenNumberState * 36.5
-  
-  
- 
-    const porkTotal = porkNumberState * 57.7
-   
-  
-  
-    const lambTotal = lambNumberState * 10.9
-    
-  
+  const carTotal = carNumberState * 0.000168
+  const busTotal = busNumberState * 0.000103
+  const trainTotal = trainNumberState * 0.000037
+  const bicycleTotal = bicycleNumberState * 0.000016
+  const beefTotal = beefNumberState * 36.4
+  const chickenTotal = chickenNumberState * 36.5
+  const porkTotal = porkNumberState * 57.7
+  const lambTotal = lambNumberState * 10.9
   const handleCalculation =  carTotal + busTotal + bicycleTotal + trainTotal;
-
-   
-  
-   
 
   return (
     
@@ -89,11 +62,7 @@ function HomeScreen({ route, navigation }) {
 
     <Text style={styles.text}>{handleCalculation}total</Text>
     
-
-    {/* <Text style={styles.text}>{co2TotalCalculation()}total</Text> */}
-
-      
-      <Image
+    <Image
     source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
     style={{ width:360, height: 250 }}
     />
@@ -106,7 +75,7 @@ function HomeScreen({ route, navigation }) {
       </View>
       <View style={styles.buttonView}>
       <Button style={styles.button}
-       title="Transport" 
+      title="Transport" 
       color="#27ae60"
       onPress={() => navigation.navigate('Transport')} />
       </View>
@@ -114,36 +83,5 @@ function HomeScreen({ route, navigation }) {
     </View>
   );
 }
-
-// const styles = StyleSheet.create({
-// container: {
-//   flex: 1,
-//   backgroundColor: '#001315',
-//   alignItems: 'center',
-//   justifyContent: 'center',
- 
-  
-// },
-// text: {
-
-//   fontSize: 15,
-//   color: 'white',
-  
-  
-// },
-// button: {
-//   margin: 10,
-//   marginVertical: 20,
-//   justifyContent: 'space-around',
-// },
-
-// buttonView: {
-  
-//   marginVertical: 20,
-//   width: 120,
-  
-// },
-
-// });  
 
 export default HomeScreen; 
