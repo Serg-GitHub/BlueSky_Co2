@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TextInput, StyleSheet, Button } from "react-native";
+import { View, Text, TextInput, Button } from "react-native";
 import Home from "../../screens/homescreen";
 import styles from "../../screens/styles";
 

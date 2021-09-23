@@ -6,12 +6,12 @@ import { ProgressChart } from "react-native-chart-kit";
 
 
 
-const Graph = ({}) =>{
+const Graph = ({graphData}) =>{
     const data = {
         labels: ["Car", "Bus", "Train", "Cycle"], // optional
-        data: [0.8 , 0.6, 0.4, 0.2]
+        data: graphData
         
-        // data:[]
+        
       };
 
 
