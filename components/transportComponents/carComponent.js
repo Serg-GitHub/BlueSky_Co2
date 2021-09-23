@@ -26,6 +26,8 @@ const carComponent=({navigation})=>{
         carNumber: number
         })
       }}/>
+       <Text style={styles.text}>Avg Car produces</Text>
+       <Text style={styles.text}> 168 g/km of Co2</Text>
         
       </View>
       </View>

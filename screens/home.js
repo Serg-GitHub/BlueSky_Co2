@@ -74,6 +74,7 @@ function HomeScreen({ route, navigation }) {
       <View style= {styles.graphView}>
       <Graph style ={styles.graph}></Graph>
       </View>
+      <Text style={styles.text}>Total:{handleCalculation}</Text>
       <View style={styles.buttonView}>
       <Button style={styles.button}
       title="Food"
