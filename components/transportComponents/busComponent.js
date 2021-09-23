@@ -24,6 +24,8 @@ const busComponent=({navigation})=>{
       busNumber: number
       })
     }}/>
+    <Text style={styles.text}>Avg Bus produces</Text>
+       <Text style={styles.text}> 103 g/km of Co2</Text>
         
     </View>
     </View>

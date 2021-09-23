@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TextInput, StyleSheet, Button } from "react-native";
+import { View, Text, TextInput, Button } from "react-native";
 import styles from "../../screens/styles";
 
 const bicycleComponent=({navigation})=>{
@@ -14,6 +14,7 @@ const bicycleComponent=({navigation})=>{
         <TextInput style={styles.textInput}
         onChangeText={onChangeNumber}
         value={number}
+        
         placeholder="Enter number"
         keyboardType="numeric" />
      
@@ -25,6 +26,8 @@ const bicycleComponent=({navigation})=>{
       bicycleNumber : number
       })
     }}/>
+    <Text style={styles.text}>Bike User produces</Text>
+       <Text style={styles.text}> 16 g/km of Co2</Text>
         
       </View>
       </View>

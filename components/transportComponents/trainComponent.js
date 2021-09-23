@@ -25,6 +25,8 @@ const trainComponent=({navigation})=>{
         trainNumber: number
         })
       }}/>
+      <Text style={styles.text}>Avg Train produces</Text>
+       <Text style={styles.text}> 37 g/km of Co2</Text>
         
       </View>
       </View>
