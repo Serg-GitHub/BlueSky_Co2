@@ -42,7 +42,7 @@ const Graph = ({graphData}) =>{
             // trainTotal={trainTotal}
             // bicycleTotal={bicycleTotal}
             data={data} 
-            width={290}
+            width={320}
             height={200}
             strokeWidth={8}
             radius={32}
