@@ -42,11 +42,11 @@ function HomeScreen({ route, navigation }) {
   const busTotal = busNumberState * 0.0103
   const trainTotal = trainNumberState * 0.0037
   const bicycleTotal = bicycleNumberState * 0.0016
-  const beefTotal = beefNumberState * 36.4
-  const chickenTotal = chickenNumberState * 36.5
-  const porkTotal = porkNumberState * 57.7
-  const lambTotal = lambNumberState * 10.9
-  const handleCalculation =  (carTotal + busTotal + bicycleTotal + trainTotal).toFixed(2);
+  const beefTotal = beefNumberState * 0.0364
+  const chickenTotal = chickenNumberState * 0.0365
+  const porkTotal = porkNumberState * 0.577
+  const lambTotal = lambNumberState * 0.109
+  const handleCalculation =  (carTotal + busTotal + bicycleTotal + trainTotal + beefTotal + chickenTotal + porkTotal + lambTotal).toFixed(2);
 
   return (
     
@@ -74,7 +74,7 @@ function HomeScreen({ route, navigation }) {
     style={{ width:360, height: 250 }}
     /> */}
       <View style= {styles.graphView}>
-      <Graph style ={styles.graph} graphData = {[carTotal, busTotal, bicycleTotal, trainTotal]}></Graph>
+      <Graph style ={styles.graph} graphData = {[carTotal, busTotal, bicycleTotal, trainTotal, beefTotal, chickenTotal, porkTotal, lambTotal]}></Graph>
       </View>
       <Text style={styles.text}>Total: {handleCalculation} grams</Text>
       <View style={styles.buttonView}>

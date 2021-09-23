@@ -8,7 +8,7 @@ import { ProgressChart } from "react-native-chart-kit";
 
 const Graph = ({graphData}) =>{
     const data = {
-        labels: ["Car", "Bus", "Train", "Cycle"], // optional
+        labels: ["Car", "Bus", "Train", "Cycle", "Beef", "Chicken", "Pork", "Lamb"], // optional
         data: graphData
         
         
@@ -29,7 +29,7 @@ const Graph = ({graphData}) =>{
         backgroundGradientFromOpacity: 0.0,
         backgroundGradientTo: "#08130D",
         backgroundGradientToOpacity: 0.1,
-        color: (opacity = 2) => `rgba(255, 165, 0, ${opacity})`,
+        color: (opacity = 1) => `rgba(255, 165, 0, ${opacity})`,
         strokeWidth: 6, // optional, default 3
         barPercentage: 0.6,
         useShadowColorFromDataset: false // optional
@@ -44,7 +44,7 @@ const Graph = ({graphData}) =>{
             data={data} 
             width={290}
             height={200}
-            strokeWidth={16}
+            strokeWidth={8}
             radius={32}
             chartConfig={chartConfig}
             hideLegend={false}
