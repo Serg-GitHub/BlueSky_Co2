@@ -38,8 +38,8 @@ function HomeScreen({ route, navigation }) {
   if (calculation && calculation !== calculationState) setCalculationState(calculation)
   
   
-  const carTotal = carNumberState * 0.0168
-  const busTotal = busNumberState * 0.0103
+  const carTotal = carNumberState * 0.0016
+  const busTotal = busNumberState * 0.0010
   const trainTotal = trainNumberState * 0.0037
   const bicycleTotal = bicycleNumberState * 0.0016
   const beefTotal = beefNumberState * 0.0364
