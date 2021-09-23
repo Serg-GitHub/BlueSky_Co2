@@ -1,26 +1,14 @@
 import React from "react";
-import { ScrollView, Dimensions } from "react-native";
+import { Dimensions } from "react-native";
 import { ProgressChart } from "react-native-chart-kit";
 
-
-
-
-
-const Graph = ({}) =>{
+const Graph = ({graphData}) =>{
     const data = {
-        labels: ["Car", "Bus", "Train", "Cycle"], // optional
-        data: [0.8 , 0.6, 0.4, 0.2]
+        labels: ["Car", "Bus", "Train", "Cycle", "Beef", "Chicken", "Pork", "Lamb"], // optional
+        data: graphData
         
-        // data:[]
+        
       };
-
-
-
-
-    // const carTotal = carNumberState;
-    // const busTotal = busNumberState;
-    // const trainTotal = trainTotal;
-    // const bicycleTotal = bicycleTotal;
 
     const screenWidth = Dimensions.get("window").width;
 
@@ -29,7 +17,7 @@ const Graph = ({}) =>{
         backgroundGradientFromOpacity: 0.0,
         backgroundGradientTo: "#08130D",
         backgroundGradientToOpacity: 0.1,
-        color: (opacity = 2) => `rgba(255, 165, 0 , ${opacity})`,
+        color: (opacity = 1) => `rgba(255, 165, 0, ${opacity})`,
         strokeWidth: 6, // optional, default 3
         barPercentage: 0.6,
         useShadowColorFromDataset: false // optional
@@ -37,14 +25,10 @@ const Graph = ({}) =>{
 
     return (
         <ProgressChart
-            // carTotal={carTotal}
-            // busTotal={busTotal}
-            // trainTotal={trainTotal}
-            // bicycleTotal={bicycleTotal}
             data={data} 
-            width={290}
+            width={310}
             height={200}
-            strokeWidth={16}
+            strokeWidth={8}
             radius={32}
             chartConfig={chartConfig}
             hideLegend={false}

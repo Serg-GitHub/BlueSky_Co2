@@ -38,15 +38,15 @@ function HomeScreen({ route, navigation }) {
   if (calculation && calculation !== calculationState) setCalculationState(calculation)
   
   
-  const carTotal = carNumberState * 0.000168
-  const busTotal = busNumberState * 0.000103
-  const trainTotal = trainNumberState * 0.000037
-  const bicycleTotal = bicycleNumberState * 0.000016
-  const beefTotal = beefNumberState * 36.4
-  const chickenTotal = chickenNumberState * 36.5
-  const porkTotal = porkNumberState * 57.7
-  const lambTotal = lambNumberState * 10.9
-  const handleCalculation =  carTotal + busTotal + bicycleTotal + trainTotal;
+  const carTotal = carNumberState * 0.0016
+  const busTotal = busNumberState * 0.0010
+  const trainTotal = trainNumberState * 0.0037
+  const bicycleTotal = bicycleNumberState * 0.0016
+  const beefTotal = beefNumberState * 0.0364
+  const chickenTotal = chickenNumberState * 0.0365
+  const porkTotal = porkNumberState * 0.0577
+  const lambTotal = lambNumberState * 0.0109
+  const handleCalculation =  (carTotal + busTotal + bicycleTotal + trainTotal + beefTotal + chickenTotal + porkTotal + lambTotal).toFixed(2);
 
   return (
     
@@ -55,26 +55,28 @@ function HomeScreen({ route, navigation }) {
     <View style= {styles.container}>
     <Text style={styles.header}>BlueSky Co2</Text>
     <Text style={styles.text}>Hello, your carbon footprint for the week is</Text>
-    {/* <Text style={styles.text}>Hi User</Text>
-    <Text style={styles.text}>{carTotal}car</Text>
-    <Text style={styles.text}>{busTotal}bus</Text>
+    {/* <Text style={styles.text}>Hi User</Text>*/}
+    {/* <Text style={styles.text}>{carTotal}car</Text> */}
+
+    {/* <Text style={styles.text}>{busTotal}bus</Text>
     <Text style={styles.text}>{trainTotal}train</Text>
     <Text style={styles.text}>{bicycleTotal}bicycle</Text>
     <Text style={styles.text}>{beefTotal}beef</Text>
     <Text style={styles.text}>{chickenTotal}chicken</Text>
     <Text style={styles.text}>{porkTotal}pork</Text>
-    <Text style={styles.text}>{lambTotal}lamb</Text>
+    <Text style={styles.text}>{lambTotal}lamb</Text> */}
 
-    <Text style={styles.text}>{handleCalculation}total</Text> */}
+    {/* <Text style={styles.text}>{handleCalculation}Total: </Text>  */}
+ 
     
     {/* <Image
     source={{ uri: 'https://blueandgreentomorrow.com/wp-content/uploads/2019/09/shutterstock_1120037774-1.jpg' }}
     style={{ width:360, height: 250 }}
     /> */}
       <View style= {styles.graphView}>
-      <Graph style ={styles.graph}></Graph>
+      <Graph style ={styles.graph} graphData = {[carTotal, busTotal, bicycleTotal, trainTotal, beefTotal, chickenTotal, porkTotal, lambTotal]}></Graph>
       </View>
-      <Text style={styles.text}>Total:{handleCalculation}</Text>
+      <Text style={styles.text}>Total: {handleCalculation} grams</Text>
       <View style={styles.buttonView}>
       <Button style={styles.button}
       title="Food"
