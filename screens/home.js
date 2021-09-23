@@ -76,7 +76,8 @@ function HomeScreen({ route, navigation }) {
       <View style= {styles.graphView}>
       <Graph style ={styles.graph} graphData = {[carTotal, busTotal, bicycleTotal, trainTotal, beefTotal, chickenTotal, porkTotal, lambTotal]}></Graph>
       </View>
-      <Text style={styles.text}>Total: {handleCalculation} grams</Text>
+      <Text style={styles.text}>Total: {handleCalculation} kg's of Co2</Text>
+      <Text style={styles.text}>Produced</Text>
       <View style={styles.buttonView}>
       <Button style={styles.button}
       title="Food"
