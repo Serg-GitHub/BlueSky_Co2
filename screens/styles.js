@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
       marginHorizontal: 50,
       
       
+      
     },
     button: {
       margin: 10,

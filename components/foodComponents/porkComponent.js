@@ -23,9 +23,14 @@ const porkComponent=({navigation})=>{
       porkNumber: number
       })
       }}/>
+
+       <Text style={styles.text}>Pork produces</Text>
+       <Text style={styles.text}> 5.77 kg of Co2 per kg</Text>
+
       </View>
       </View>
     )   
     
 }
+
 export default porkComponent

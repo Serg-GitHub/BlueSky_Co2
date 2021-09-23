@@ -24,6 +24,9 @@ const chickenComponent=({navigation})=>{
           chickenNumber: number
         })
       }} />
+
+       <Text style={styles.text}>Chicken produces</Text>
+       <Text style={styles.text}> 3.65 kg of Co2 per kg </Text>
         
       </View>
       </View>
