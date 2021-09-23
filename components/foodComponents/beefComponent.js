@@ -25,6 +25,9 @@ const beefComponent=({navigation})=>{
       beefNumber: number
       })
       }}/>
+
+       <Text style={styles.text}>Beef produces</Text>
+       <Text style={styles.text}> 36.4 kg of Co2 per kg</Text>
       
       </View>
       </View>  

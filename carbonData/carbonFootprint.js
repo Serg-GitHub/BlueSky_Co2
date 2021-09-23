@@ -11,15 +11,11 @@ const carbonFootprint = ({handleCalculation, addCarbonData}) => {
     const [bus, setBus] = useState(0);
     const [bike, setBike] = useState(0);
    
-
-
     const handleCar = (event) => setCar(event.target.value);
     const handleTrain = (event) => setTrain(event.target.value);
     const handleBus = (event) => setBus(event.target.value);
     const handleBike = (event) => setBike(event.target.value);
     
-
-
     const handleSubmit = event => {
         event.preventDefault();
         const values = {
@@ -40,10 +36,5 @@ const carbonFootprint = ({handleCalculation, addCarbonData}) => {
     return(
         <carComponent handleCar={handleCar}/>
     )
-
-    
-
 }
-
-
 export default carbonFootprint;

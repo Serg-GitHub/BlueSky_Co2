@@ -26,13 +26,12 @@ const bicycleComponent=({navigation})=>{
       bicycleNumber : number
       })
     }}/>
-    <Text style={styles.text}>Bike User produces</Text>
+    <Text style={styles.text}>Avg Cyclist produces</Text>
        <Text style={styles.text}> 16 g/km of Co2</Text>
         
       </View>
-      </View>
+    </View>
     )   
     
 }
-
 export default bicycleComponent

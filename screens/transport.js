@@ -42,9 +42,6 @@ function Transport({ navigation }) {
         </View>
 
       </View>
-      
     );
-    
   }
- 
-export default Transport;
+  export default Transport;

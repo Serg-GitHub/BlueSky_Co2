@@ -26,25 +26,15 @@ const Graph = ({graphData}) =>{
     return (
         <ProgressChart
             data={data} 
-            width={320}
+            width={310}
             height={200}
             strokeWidth={8}
             radius={32}
             chartConfig={chartConfig}
             hideLegend={false}
             />
-
-    
     )
-
- 
-      
 } 
-
-
-
-
-
 export default Graph
 
 

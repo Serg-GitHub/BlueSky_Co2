@@ -34,5 +34,4 @@ const carComponent=({navigation})=>{
     )   
     
 }
-
 export default carComponent

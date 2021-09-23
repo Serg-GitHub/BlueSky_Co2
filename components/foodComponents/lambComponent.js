@@ -24,10 +24,12 @@ const lambComponent=({navigation})=>{
         lambNumber: number
         })
       }}/>
+
+       <Text style={styles.text}>Lamb produces</Text>
+       <Text style={styles.text}> 10.9 kg of Co2 per kg</Text>
         
       </View>
       </View>
     )   
 }
-
 export default lambComponent
