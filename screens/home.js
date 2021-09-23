@@ -45,7 +45,7 @@ function HomeScreen({ route, navigation }) {
   const beefTotal = beefNumberState * 0.0364
   const chickenTotal = chickenNumberState * 0.0365
   const porkTotal = porkNumberState * 0.0577
-  const lambTotal = lambNumberState * 0.109
+  const lambTotal = lambNumberState * 0.0109
   const handleCalculation =  (carTotal + busTotal + bicycleTotal + trainTotal + beefTotal + chickenTotal + porkTotal + lambTotal).toFixed(2);
 
   return (
