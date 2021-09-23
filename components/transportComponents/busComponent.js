@@ -32,5 +32,4 @@ const busComponent=({navigation})=>{
     )   
     
 }
-
 export default busComponent

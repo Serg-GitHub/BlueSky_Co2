@@ -33,5 +33,4 @@ const trainComponent=({navigation})=>{
     )   
     
 }
-
 export default trainComponent

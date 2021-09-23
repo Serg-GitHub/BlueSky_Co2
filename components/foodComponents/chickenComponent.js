@@ -30,5 +30,4 @@ const chickenComponent=({navigation})=>{
     )   
     
 }
-
 export default chickenComponent

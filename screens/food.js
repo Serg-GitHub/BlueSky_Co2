@@ -42,34 +42,7 @@ function Food({ navigation }) {
         color="#5cb85c"
         title="Go back" onPress={() => navigation.goBack()} />
         </View>
-        
-        
-      </View>
+        </View>
     );
-  }
-
-  // const styles = StyleSheet.create({
-  //   container: {
-  //     flex: 1,
-  //     backgroundColor: '#001315',
-  //     alignItems: 'center',
-  //     justifyContent: 'center',
-     
-      
-  //   },
-  //   text: {
-  //     fontSize: 40,
-  //     color: 'white',
-  //     letterSpacing: 10,
-      
-      
-  //   },
-
-  //   });  
-   
-
-
-
-  
-
+}
 export default Food;

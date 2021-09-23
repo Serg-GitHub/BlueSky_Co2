@@ -29,5 +29,4 @@ const lambComponent=({navigation})=>{
       </View>
     )   
 }
-
 export default lambComponent

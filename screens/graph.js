@@ -33,14 +33,8 @@ const Graph = ({graphData}) =>{
             chartConfig={chartConfig}
             hideLegend={false}
             />
-
-    
     )
-
- 
-      
 } 
-
 export default Graph
 
 

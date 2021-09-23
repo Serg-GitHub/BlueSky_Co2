@@ -34,5 +34,4 @@ const bicycleComponent=({navigation})=>{
     )   
     
 }
-
 export default bicycleComponent

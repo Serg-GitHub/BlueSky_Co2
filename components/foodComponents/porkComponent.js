@@ -28,5 +28,4 @@ const porkComponent=({navigation})=>{
     )   
     
 }
-
 export default porkComponent
