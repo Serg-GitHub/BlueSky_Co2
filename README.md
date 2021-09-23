@@ -1,4 +1,6 @@
-BlueSky_Co2
+BlueSky Co2
+
+Brief:
 
 You have been approached by Blue Sky Development and have been asked to develop an Android mobile version of their personal CO2 footprint calculator. Your brief is to develop a personal CO2 footprint calculator app for Android using the React Native framework and JavaScript. The App must be able to calculate a user's CO2 input based on lifestyle activities.
 
