@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "assets/ic_launcher.png",
     "splash": {
-      "image": "assets/CO2 logo.png",
+      "image": "assets/co2_logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#001315"
     },
@@ -22,7 +22,7 @@
     "android": {
       "package": "blueskydevelopment.co2app",
       "adaptiveIcon": {
-        "foregroundImage": "assets/CO2 logo.png",
+        "foregroundImage": "assets/co2_logo.png",
         "backgroundColor": "#001315"
       }
     },
