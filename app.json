@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "BlueSky_Co2",
-    "slug": "BlueSky_Co2",
+    "name": "BlueSky Co2",
+    "slug": "BlueSkyCo2",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "assets/ic_launcher.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "assets/CO2 logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#001315"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,13 +20,14 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "blueskydevelopment.co2app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "assets/CO2 logo.png",
+        "backgroundColor": "#001315"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "assets/ic_launcher.png"
     }
   }
 }
