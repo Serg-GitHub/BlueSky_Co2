@@ -13,11 +13,8 @@ function footprintCalculation() {
       carbonServices.addCarbonData(values)
       .then(savedCarbon => {
             setAllData([...allData,savedCarbon])
-      }
-        
-        )
-    }
-  
+    })
+    
     const deleteCarbonData = (id) => {
       carbonServices.deleteCarbonData(id)
       setAllData(allData.filter(data => data._id !== id))
