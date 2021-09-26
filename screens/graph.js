@@ -38,6 +38,6 @@ const Graph = ({graphData}) =>{
             />
     )
 } 
-export default Graph
+export default Graph 
 
 
