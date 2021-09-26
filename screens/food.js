@@ -15,25 +15,25 @@ function Food({ navigation }) {
         
         <View style={styles.buttonView}>
         <Button style={styles.button}
-        color="#ff0000"
+        color="#FFED33"
         title="Beef" onPress={() => navigation.navigate('Beef')} />
         </View>
 
         <View style={styles.buttonView}>
         <Button style={styles.button}
-        color="#ffa500"
+        color="#A8FF33"
         title="Chicken" onPress={() => navigation.navigate('Chicken')} />
         </View>
 
         <View style={styles.buttonView}>
         <Button style={styles.button}
-        color="#4b0082"
+        color="#E633FF"
         title="Lamb" onPress={() => navigation.navigate('Lamb')} />
         </View>
 
         <View style={styles.buttonView}>
         <Button style={styles.button}
-        color="#0000ff"
+        color="#33FFF9"
         title="Pork" onPress={() => navigation.navigate('Pork')} />
         </View>
 
