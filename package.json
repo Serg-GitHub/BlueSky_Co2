@@ -21,7 +21,9 @@
     "react-native-gesture-handler": "~1.10.2",
     "react-native-paper": "^4.9.2",
     "react-native-web": "~0.13.12",
-    "rn-range-slider": "^2.1.1"
+    "rn-range-slider": "^2.1.1",
+    "firebase": "8.2.3",
+    "react-native-safe-area-context": "3.2.0"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.9.0",

@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { View, Button, Text, StyleSheet, Image } from 'react-native';
+import { View, Button, Text, } from 'react-native';
 import styles from "./styles"
 import Graph from './graph';
-
+import { auth } from '../firebase';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
 function HomeScreen({ route, navigation }) {
+
   const [carNumberState, setCarNumberState] = React.useState(0);
   const [busNumberState, setBusNumberState] = React.useState(0);
   const [trainNumberState, setTrainNumberState] = React.useState(0);
@@ -15,8 +17,14 @@ function HomeScreen({ route, navigation }) {
   const [porkNumberState, setPorkNumberState] = React.useState(0);
   const [lambNumberState, setLambNumberState] = React.useState(0);
   const [calculationState, setCalculationState] = React.useState(0);
-
-
+  const handleSignOut = ()=>{
+    auth
+    .signOut()
+    .then(()=>{
+      navigation.replace('Login Screen')
+    })
+    .catch(error=> alert(error.message))
+  }
 
   const{carNumber} = route.params || {}
   if (carNumber && carNumber !== carNumberState) setCarNumberState(carNumber)
@@ -50,9 +58,8 @@ function HomeScreen({ route, navigation }) {
 
   return (
     
-    
-    
     <View style= {styles.container}>
+    <Text style={styles.textInput}>User: {auth.currentUser?.email}</Text>
     <Text style={styles.header}>BlueSky Co2</Text>
     <Text style={styles.text}>Hello, your carbon footprint this week is</Text>
 
@@ -72,6 +79,11 @@ function HomeScreen({ route, navigation }) {
       title="Transport" 
       color="#27ae60"
       onPress={() => navigation.navigate('Transport')} />
+      <TouchableOpacity
+      onPress={handleSignOut}
+      style={styles.button}>
+      <Text style={styles.textInput}>Sign out</Text>
+      </TouchableOpacity>
       </View>
       </View>
   );

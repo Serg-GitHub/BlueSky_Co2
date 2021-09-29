@@ -4,6 +4,7 @@ import React from 'react';
 import HomeScreen from './screens/home';
 import Food from './screens/food';
 import { createStackNavigator } from '@react-navigation/stack';
+import loginScreen from './screens/loginScreen';
 import Transport from './screens/transport';
 import carComponent from './components/transportComponents/carComponent';
 import beefComponent from './components/foodComponents/beefComponent';
@@ -16,14 +17,17 @@ import trainComponent from './components/transportComponents/trainComponent';
 
 
 
-
-
 const Stack = createStackNavigator();
 export default function App() {
   return (
     
     <NavigationContainer>
        <Stack.Navigator>
+        <Stack.Screen
+        name="Login Screen"
+        component={loginScreen}
+        options={{ headerShown: false}}
+        />
         <Stack.Screen
           name="Home"
           component={HomeScreen}
