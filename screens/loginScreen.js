@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/core'
 import React, {useState, useEffect} from 'react'
-import { StyleSheet, fontFamily, Text, KeyboardAvoidingView, View, TextInput, TouchableOpacity, } from 'react-native'
+import { StyleSheet, fontFamily, Text, KeyboardAvoidingView, View, TextInput, TouchableOpacity, Image, } from 'react-native'
 import { auth } from '../firebase.js'
 
 
@@ -45,6 +45,12 @@ const loginScreen = () => {
         <KeyboardAvoidingView
         style={styles.container}
         behavior="padding">
+        <Image
+        style={{width: 100, height: 100}}
+        source={require('/Users/user/Desktop/CAPSTONE PROJECT /BlueSky_Co2/assets/ic_launcher.png')
+
+        }/>
+        
         <Text style={styles.text}>WELCOME</Text>
         <View style={styles.inputContainer}>
         <TextInput
@@ -53,6 +59,7 @@ const loginScreen = () => {
             onChangeText={text=>setEmail(text)}
             style={styles.input}
         />
+        
                 <TextInput
             placeholder="password"
             value={password}
@@ -91,7 +98,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#001315'
         },
         inputContainer: {
-        width: '18%',
+        width: '80%',
         },
         input: {
         backgroundColor: 'white',
@@ -101,7 +108,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         },
         buttonContainer: {
-        width: '30%',   
+        width: '60%',   
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 40,
@@ -111,7 +118,7 @@ const styles = StyleSheet.create({
         },
         button: {
         backgroundColor: "#5cb85c",
-        width: '30%',
+        width: '100%',
         padding: 15,
         borderRadius: 10,
         alignItems: 'center',
