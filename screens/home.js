@@ -59,7 +59,7 @@ function HomeScreen({ route, navigation }) {
   return (
     
     <View style= {styles.container}>
-    <Text style={styles.textInput}>User: {auth.currentUser?.email}</Text>
+    <Text style={styles.text}>user: {auth.currentUser?.email}</Text>
     <Text style={styles.header}>BlueSky Co2</Text>
     <Text style={styles.text}>Hello, your carbon footprint this week is</Text>
 
@@ -82,7 +82,7 @@ function HomeScreen({ route, navigation }) {
       <TouchableOpacity
       onPress={handleSignOut}
       style={styles.button}>
-      <Text style={styles.textInput}>Sign out</Text>
+      <Text style={styles.textLog}>Sign out</Text>
       </TouchableOpacity>
       </View>
       </View>

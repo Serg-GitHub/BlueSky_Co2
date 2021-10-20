@@ -40,6 +40,14 @@ const styles = StyleSheet.create({
 
     },
 
+    textLog: {
+      backgroundColor: "#27ae60",
+      marginVertical: 20,
+      height: 33,
+      color: 'white',
+
+    },
+
     graphView: {
       
       alignItems: 'center',
